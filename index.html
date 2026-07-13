@@ -54,14 +54,14 @@
             margin-bottom: 3rem;
         }
 
-        .profile-img {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            /*border-radius: 50%; Makes the photo circular */
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            flex-shrink: 0;
-        }
+	.profile-img {
+	    width: 160px;       /* Slightly narrower */
+	    height: 200px;      /* Taller for a classic portrait look */
+	    object-fit: cover;  /* Prevents the image from squishing */
+	    border-radius: 8px; /* Softens the sharp corners just a bit */
+	    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	    flex-shrink: 0;
+	}
 
         .bio {
             flex: 1;
@@ -134,9 +134,9 @@
     <!-- Header / Title -->
     <header>
         <h1>Ondřej Ježil</h1>
-        <p>Postdoctoral Researcher at the Department of Computer Science, University of Warwick</p>
+        <p>Research Fellow at the Department of Computer Science, University of Warwick</p>
         <div class="contact-info">
-	    <a href="mailto:ondrej.jezil@email.cz">Email</a> •
+	    <a href="mailto:ondrej.jezil@email.cz">Email</a>
         </div>
     </header>
 
@@ -163,16 +163,15 @@
                     <div class="pub-authors">with Dimitrios Tsintsilidas</div>
                     <div class="pub-venue">2026 pre-print, submitted</div>
                     <div class="pub-links">
-			<a href="=https://arxiv.org/pdf/2602.19934>">[PDF]</a>
+			<a href="https://arxiv.org/pdf/2602.19934>">pdf</a>
                     </div>
                 </li>
                 
                 <li>
                     <div class="pub-title">Prime Factorization in Models of PV_1</div>
-                    <div class="pub-venue">Logical Methods in Computer Science, April 7, 2026, Volume 22, Issue 2</div>
+                    <div class="pub-venue">Logical Methods in Computer Science, April 7, 2026, Volume 22, Issue 2 - https://doi.org/10.46298/lmcs-22(2:1)2026</div>
                     <div class="pub-links">
-                        <a href="#" target="_blank">link</a>
-                        <a href="https://doi.org/10.46298/lmcs-22(2:1)2026" target="_blank">[DOI]</a>
+                        <a href="https://lmcs.episciences.org/17970" target="_blank">link</a>
                     </div>
                 </li>
 
