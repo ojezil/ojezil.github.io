@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Academic Portfolio</title>
+    <style>
+        /* Modern, clean typography and spacing */
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            background-color: #ffffff;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header Section */
+        header {
+            border-bottom: 2px solid #f0f2f5;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        /* Profile Layout (Flexbox for side-by-side image and bio) */
+        .profile-container {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            margin-bottom: 3rem;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%; /* Makes the photo circular */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+        }
+
+        .bio {
+            flex: 1;
+        }
+
+        /* Publications List Formatting */
+        .publications {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .publications li {
+            margin-bottom: 1.5rem;
+            padding: 1.2rem;
+            background: #f8fafc;
+            border-left: 4px solid #3498db;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .pub-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #2c3e50;
+            margin-bottom: 0.2rem;
+        }
+
+        .pub-authors {
+            color: #475569;
+            margin-bottom: 0.2rem;
+        }
+
+        .pub-venue {
+            color: #64748b;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .pub-links {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+        }
+
+        .pub-links a {
+            margin-right: 15px;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 4rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #f0f2f5;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.85rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .profile-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Title -->
+    <header>
+        <h1>Dr. Firstname Lastname</h1>
+        <p>Postdoctoral Researcher in Computational Biology</p>
+        <div class="contact-info">
+            <a href="mailto:your.email@university.edu">Email</a> •
+            <a href="https://scholar.google.com" target="_blank">Google Scholar</a> •
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        
+        <!-- About Me Section -->
+        <section class="profile-container">
+            <!-- Replace 'profile.jpg' with the actual path to your photo -->
+            <img src="profile.jpg" alt="Photo of Firstname Lastname" class="profile-img">
+            
+            <div class="bio">
+                <h2>About Me</h2>
+                <p>Hello! I am a researcher at the <strong>University of Excellence</strong>, working in the Department of Computer Science. My research primarily focuses on artificial intelligence, machine learning, and their applications in biological data.</p>
+                <p>Before joining my current lab, I completed my Ph.D. at the Institute of Advanced Studies, where my thesis explored neural network architectures for predicting protein folding. I am passionate about open-source software, reproducible research, and teaching.</p>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section>
+            <h2>Selected Publications</h2>
+            <ul class="publications">
+                
+                <!-- Publication Item 1 -->
+                <li>
+                    <div class="pub-title">A Novel Approach to Predictive Modeling in Genomics</div>
+                    <div class="pub-authors">Lastname, F., Coauthor, A., & Supervisor, M.</div>
+                    <div class="pub-venue">Journal of Computational Biology, 2025</div>
+                    <div class="pub-links">
+                        <a href="#" target="_blank">[PDF]</a>
+                        <a href="#" target="_blank">[Code]</a>
+                        <a href="#" target="_blank">[DOI]</a>
+                    </div>
+                </li>
+
+                <!-- Publication Item 2 -->
+                <li>
+                    <div class="pub-title">Understanding Deep Learning Workloads for Bioinformatics</div>
+                    <div class="pub-authors">Author, B., Lastname, F., & Researcher, C.</div>
+                    <div class="pub-venue">International Conference on Machine Learning (ICML), 2024</div>
+                    <div class="pub-links">
+                        <a href="#" target="_blank">[PDF]</a>
+                        <a href="#" target="_blank">[Poster]</a>
+                    </div>
+                </li>
+
+                 <!-- Publication Item 3 -->
+                 <li>
+                    <div class="pub-title">An Open-Source Toolkit for Transcriptome Analysis</div>
+                    <div class="pub-authors">Lastname, F., & Smith, J.</div>
+                    <div class="pub-venue">Bioinformatics, 2023</div>
+                    <div class="pub-links">
+                        <a href="#" target="_blank">[PDF]</a>
+                        <a href="#" target="_blank">[GitHub Repo]</a>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Firstname Lastname. Last updated: July 2026.</p>
+    </footer>
+
+</body>
+</html>
